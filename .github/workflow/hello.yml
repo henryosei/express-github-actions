@@ -5,8 +5,7 @@ jobs:
     name: First Job
     runs-on: ubuntu-latest
     steps:  
-        step1:  
-          - name: Step one
-            uses: actions/checkout@v2
-          - name: Step two
-            run: env | sort
+        - name: Step one
+          uses: actions/checkout@v2
+        - name: Step two
+          run: env | sort
