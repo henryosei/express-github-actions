@@ -10,5 +10,6 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secret.AWS_SECRET_ACCESS_KEY }}
+          region: ${{secret.AWS_REGION}}
       - name: LIST S3 Buckets
         runs: aws s3api list-buckets
